@@ -3,7 +3,7 @@ import { useState, useEffect, ChangeEvent } from "react"
 import { OptionType, ForecastType } from "../types"
 
 export default function useForecast() {
-  const APIKey = import.meta.env.VITE_PRIVATE_KEY
+  const APIKey = import.meta.env.VITE_PRIVATE_KEY // or enter your private api key to preview 
   const [term, setTerm] = useState<string>("")
   const [options, setOptions] = useState<[]>([])
   const [city, setCity] = useState<OptionType | null>(null)
